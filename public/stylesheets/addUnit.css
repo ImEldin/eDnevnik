@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e3f2fd; /* Light blue background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: none;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0d47a1; /* Primary blue */
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #90caf9;
+    background-color: #f3faff;
+    color: #0d47a1;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #1565c0;
+    box-shadow: 0 0 10px rgba(21, 101, 192, 0.3);
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #1565c0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0d47a1;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(13, 71, 161, 0.5);
+}

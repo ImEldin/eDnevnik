@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e3f2fd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #0d47a1;
+
+    .container {
+        text-align: center;
+        background: #ffffff;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(33, 150, 243, 0.5);
+        width: 100%;
+        max-width: 450px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 32px;
+        color: #1565c0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #1976d2;
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #0d47a1;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    form input[type="email"],
+    form input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        margin: 12px 0;
+        border: 1px solid #90caf9;
+        border-radius: 10px;
+        box-sizing: border-box;
+        background-color: #e3f2fd;
+        color: #0d47a1;
+        font-size: 16px;
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    form input[type="email"]::placeholder,
+    form input[type="password"]::placeholder {
+        color: #64b5f6;
+    }
+
+    form input[type="email"]:focus,
+    form input[type="password"]:focus {
+        border-color: #1565c0;
+        box-shadow: 0 0 10px rgba(21, 101, 192, 0.5);
+        outline: none;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        background-color: #1565c0;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        box-shadow: 0 6px 15px rgba(21, 101, 192, 0.5);
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #0d47a1;
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(13, 71, 161, 0.7);
+    }
+
+    a {
+        color: #1565c0;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #0d47a1;
+    }
+}

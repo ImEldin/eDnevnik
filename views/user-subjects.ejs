@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Subjects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+        body {
+            background-color:#e3f2fd;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-primary fw-bold mb-4">My Subjects</h1>
+        <a href="/student-dashboard" class="btn btn-danger">
+            <i class="bi bi-arrow-left me-2"></i> Back
+        </a>
+    </div>
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h2 class="h5 mb-0">Subjects</h2>
+        </div>
+        <ul class="list-group list-group-flush">
+            <% if (subjects.length > 0) { %>
+                <% subjects.forEach(subject => { %>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span><%= subject.subject_name %></span>
+                        <a href="/student-dashboard/subjects/<%= subject.id %>/grades" class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-eye"></i> View Grades
+                        </a>
+                    </li>
+                <% }); %>
+            <% } else { %>
+                <li class="list-group-item text-center text-muted">You have no subjects assigned yet.</li>
+            <% } %>
+        </ul>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
