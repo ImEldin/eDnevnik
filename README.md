@@ -71,6 +71,23 @@ eDnevnik/
 - **POST** `/classes` → Create a new class.
 - **PUT** `/classes/:id` → Update class information.
 - **DELETE** `/classes/:id` → Remove a class.
+- 
+## 📜 Installation and Setup
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/ImEldin/eDnevnik.git
+   cd eDnevnik
+   ```
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Start the Application**:
+   ```bash
+   npm start
+   ```
+   The application will run at `http://localhost:3000`.
 
 ## 🔒 Authentication & Middleware
 
